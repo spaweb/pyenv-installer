@@ -1,13 +1,13 @@
 pyenv installer
 ===============
 
-This tool installs `pyenv <https://github.com/pyenv/pyenv>`__ and friends. It is inspired by `rbenv-installer <https://github.com/rbenv/rbenv-installer>`__.
+This tool installs `pyenv <https://github.com/spaweb/pyenv>`__ and friends. It is inspired by `rbenv-installer <https://github.com/rbenv/rbenv-installer>`__.
 
 Prerequisites
 ----
 In general, compiling your own Python interpreter requires the installation of the
 appropriate libraries and packages.  The `installation wiki
-<https://github.com/pyenv/pyenv/wiki/Common-build-problems>`__ provides a list of these for common
+<https://github.com/spaweb/pyenv/wiki/Common-build-problems>`__ provides a list of these for common
 operating systems.
 
 
@@ -23,7 +23,7 @@ Install:
     
 ``pyenv.run`` redirects to the install script in this repository and the invocation above is equivalent to::
 
-    curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+    curl -L https://github.com/spaweb/pyenv-installer/raw/master/bin/pyenv-installer | bash
 
 Restart your shell so the path changes take effect:
 
@@ -75,14 +75,14 @@ Travis itself uses pyenv and therefore ``PYENV_ROOT`` is set already. To make it
 
   [...]
   - unset PYENV_ROOT
-  - curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+  - curl -L https://github.com/spaweb/pyenv-installer/raw/master/bin/pyenv-installer | bash
   - export PATH="$HOME/.pyenv/bin:$PATH"
   - pyenv install 3.5.2
 
 Development and testing
 -----------------------
 
-The `project on github <https://github.com/pyenv/pyenv-installer>`__ contains
+The `project on github <https://github.com/spaweb/pyenv-installer>`__ contains
 a setup for vagrant to test the installer inside a vagrant managed virtual image.
 
 If you don't know vagrant yet: just `install the latest
